@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Action Quest — Privacy Policy</title>
+<meta name="description" content="Privacy policy for Action Quest, a Discord bot for Action Model community campaigns.">
+<style>
+  :root {
+    --bg: #12131a;
+    --panel: #181a24;
+    --text: #e7e7ee;
+    --muted: #9496a8;
+    --accent: #7c93ff;
+    --line: #262838;
+  }
+
+  * { box-sizing: border-box; }
+
+  html { color-scheme: dark; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 5rem 1.5rem 6rem;
+  }
+
+  header {
+    margin-bottom: 3.5rem;
+  }
+
+  .tag {
+    display: inline-block;
+    font-size: 0.8rem;
+    color: var(--accent);
+    font-weight: 600;
+    margin-bottom: 0.9rem;
+  }
+
+  h1 {
+    font-size: 2.1rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    margin: 0 0 0.6rem;
+    color: #fff;
+  }
+
+  .meta {
+    color: var(--muted);
+    font-size: 0.9rem;
+    margin: 0;
+  }
+
+  .lede {
+    font-size: 1.05rem;
+    color: #c7c8d6;
+    margin-top: 1.6rem;
+    max-width: 58ch;
+  }
+
+  section {
+    margin-top: 2.6rem;
+    padding-top: 2.6rem;
+    border-top: 1px solid var(--line);
+  }
+
+  section:first-of-type {
+    border-top: none;
+    padding-top: 0;
+  }
+
+  h2 {
+    font-size: 1.05rem;
+    font-weight: 700;
+    margin: 0 0 0.9rem;
+    color: #fff;
+  }
+
+  p {
+    margin: 0 0 1rem;
+    max-width: 62ch;
+  }
+
+  ul {
+    margin: 0 0 1rem;
+    padding-left: 1.3rem;
+  }
+
+  li {
+    margin-bottom: 0.55rem;
+    max-width: 58ch;
+  }
+
+  li:last-child { margin-bottom: 0; }
+
+  strong { color: #fff; font-weight: 600; }
+
+  code {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    padding: 0.1em 0.4em;
+    font-size: 0.88em;
+  }
+
+  a {
+    color: var(--accent);
+    text-decoration: underline;
+    text-decoration-color: rgba(124, 147, 255, 0.4);
+    text-underline-offset: 2px;
+  }
+
+  a:hover { text-decoration-color: var(--accent); }
+
+  footer {
+    margin-top: 3.5rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 0.85rem;
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <span class="tag">Action Quest</span>
+      <h1>Privacy Policy</h1>
+      <p class="meta">Last updated October 2026</p>
+      <p class="lede">
+        Action Quest is a Discord bot built for Action Model's community campaigns.
+        This page explains what data the bot collects, why, and how it's handled.
+      </p>
+    </header>
+
+    <section>
+      <h2>Data we collect</h2>
+      <ul>
+        <li><strong>Discord User ID</strong> — to associate your linked X account and role eligibility with your Discord account.</li>
+        <li><strong>X (Twitter) username</strong> — the username you provide via <code>/link-x</code>, used only to verify that posts you submit were authored by you.</li>
+        <li><strong>Discord Server (Guild) ID</strong> — to store per-server campaign configuration: channel, reward role, excluded role, and active status.</li>
+        <li><strong>Submitted post links and timestamps</strong> — the X post URL you paste in the campaign channel, logged for record-keeping and dispute resolution.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>What we don't collect</h2>
+      <ul>
+        <li>We don't access your X account, DMs, email, password, or anything beyond the public post URL you voluntarily submit.</li>
+        <li>We don't read message content outside the designated campaign channel.</li>
+        <li>We don't use AI, and we don't send any data to third-party AI services.</li>
+        <li>We don't make calls to the X/Twitter API.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>How data is used</h2>
+      <p>
+        Data is used only to operate the campaign: verifying that a submitted post belongs to
+        the linked account, enforcing exclusion rules, and assigning Discord roles. Submission
+        logs may be reviewed by server admins for moderation purposes.
+      </p>
+    </section>
+
+    <section>
+      <h2>Data storage</h2>
+      <p>
+        Data is stored in a PostgreSQL database hosted on Railway. It's retained for as long
+        as the bot remains active in a server, or until a user or admin requests deletion.
+      </p>
+    </section>
+
+    <section>
+      <h2>Data sharing</h2>
+      <p>
+        We don't sell or share collected data with third parties. Data is only accessible to
+        the bot's operators for administration and debugging.
+      </p>
+    </section>
+
+    <section>
+      <h2>Your rights</h2>
+      <p>
+        You can request removal of your linked X account and submission history at any time
+        by contacting a server admin, or by reaching out directly using the contact below.
+      </p>
+    </section>
+
+    <footer>
+      Questions about this policy? Contact <a href="mailto:habeebl797@gmail.com">habeebl797@gmail.com</a>.
+    </footer>
+  </div>
+</body>
+</html>
